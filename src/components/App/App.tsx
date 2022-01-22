@@ -1,11 +1,12 @@
 import React from 'react';
+import {MusicList} from '../Music-List/MusicList';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
      
-          Learn React
+          <MusicList/>
         
     </div>
   );
