@@ -1,5 +1,6 @@
 import React from 'react';
 import { songItem } from '../../types';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 import { MusicPlayer } from '../MusicPlayer/MusicPlayer';
 import './MusicListItem.css'
 
@@ -22,8 +23,8 @@ export const MusicListItem=({songItem,onLikeClick}:IMusicListItemProps)=>{
               </div>
               <div className="player-like-div">
                  <MusicPlayer musicFilePath={musicFilePath} audioType={audioType}/>
-                 <button onClick={()=>onLikeClick(songId)}>
-                     Like
+                 <button className="like-button" onClick={()=>onLikeClick(songId)}>
+                     <FavoriteIcon/>
                  </button>
               </div>
             </div>

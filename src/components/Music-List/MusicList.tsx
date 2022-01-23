@@ -21,7 +21,7 @@ export const MusicList=()=>{
     },[songsArray]);
 
     const getSongsList=async()=>{
-        console.log("not coming...");        try{
+        try{
             const response=await axios.get('https://api-stg.jam-community.com/song/trending');
             setSongs(response.data);
         }catch(error:any)
@@ -51,11 +51,10 @@ export const MusicList=()=>{
                 {                    
                     headers: { 'content-type': 'application/x-www-form-urlencoded',
                 },
-                    params: {                                    
+                params: {                                    
                         'apikey':'___agAFTxkmMIWsmN9zOpM_6l2SkZPPy21LGRlxhYD8'
-                    }                     
+                }                     
                 });
-                console.log(response)
                 getSongsList();
 
             }catch(error:any)

@@ -41,4 +41,44 @@
     font-family: "Sigmar One",  cursive,"Source Sans Pro", Arial, sans-serif;;
     font-weight: normal;
     font-size: 0.5em;
+    color: #900c3f;
 }
+
+.player-like-div{
+    display: flex;  
+    justify-content: space-between; 
+}
+.play-button,
+.pause-button,
+.like-button{
+    border:none;
+    justify-self: flex-start;
+    background-color: transparent;
+    color: #900c3f;
+}
+.player{
+    align-self:flex-start;
+    padding-right:12.5rem;
+}
+
+.play-button:hover,
+.pause-button:hover
+{
+   color: green;
+   transform: scale(1.1);
+   transition: 0.2s;
+}
+
+@keyframes bounce{
+	from { transform: translate3d(0, 0, 0);}
+	to { transform: translate3d(0, 10px, 0);}
+}
+
+.like-button:hover{
+    animation: bounce 0.1s;
+    animation-direction: alternate;
+    animation-iteration-count:5;
+}
+
+
+ 

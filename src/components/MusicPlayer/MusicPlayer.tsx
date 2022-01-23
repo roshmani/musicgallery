@@ -29,13 +29,11 @@ export const MusicPlayer=({musicFilePath,audioType}:IMusicPlayer)=>{
     }, []);
 
   return (
-    <div className="player">
-      <div className="controls">
+    <div className="player">     
         {isPlaying ? 
           <Pause handleClick={() => setIsPlaying(false)} /> :
           <Play handleClick={() => setIsPlaying(true)} />
-        }        
-      </div>
+        }   
     </div>
   );
 }

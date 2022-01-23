@@ -4,13 +4,11 @@ import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
 interface IPlayProps{
     handleClick:Function;
 }
-export default function MusicPlayerControls({handleClick}:IPlayProps) {
-  
+export default function Play({handleClick}:IPlayProps) {
   return (
         <button className="play-button" onClick={() => handleClick()}>
-         <PlayCircleFilledIcon />
-        </button>
- 
+          <PlayCircleFilledIcon />
+        </button> 
     
   );
 }
