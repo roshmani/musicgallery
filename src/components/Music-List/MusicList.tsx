@@ -67,7 +67,7 @@ export const MusicList=()=>{
         likeSong();
     };
     
-    return <div>
+    return <div className="music-container">
             {songsList&&songsList.map((song:songItem)=>{
             return <MusicListItem 
                     key={song.songId} 

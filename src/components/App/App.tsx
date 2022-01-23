@@ -5,9 +5,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-     
-          <MusicList/>
-        
+          <header className="header-div"> 
+            <h1 className="headerh1">Music Unlimited</h1>
+             <p className="headtxt">A repo as you have never seen..</p>
+          </header>     
+          <MusicList/>        
     </div>
   );
 }
