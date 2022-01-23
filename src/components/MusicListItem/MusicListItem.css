@@ -64,6 +64,7 @@
 .play-button:hover,
 .pause-button:hover
 {
+   cursor:pointer;
    color: green;
    transform: scale(1.1);
    transition: 0.2s;
@@ -75,6 +76,7 @@
 }
 
 .like-button:hover{
+    cursor:pointer;
     animation: bounce 0.1s;
     animation-direction: alternate;
     animation-iteration-count:5;

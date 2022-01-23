@@ -1,7 +1,6 @@
 import React from 'react';
 import Play from "../Play/Play";
 import Pause from "../Pause/Pause";
-import './MusicPlayer.css';
 
 interface IMusicPlayer{
     musicFilePath:string;
