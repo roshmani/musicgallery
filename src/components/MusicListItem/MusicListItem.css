@@ -1,4 +1,44 @@
-.cover-image{
-    width:200px;
-    height:200px;
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+.music-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: column; 
+    border-radius: 10px;
+    border: 1px solid gray;
+    text-align: center;
+    flex: 1 0 22rem;
+    margin: 1rem;
+    padding: 1rem;
+    animation: fadeUp 1s;
+}
+
+.cover-image{    
+    width: 300px;
+    height: 300px;
+    object-fit: cover    
+}
+
+.music-item:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.song-title{
+    font-family: "Sigmar One",  cursive,"Source Sans Pro", Arial, sans-serif;;
+    font-weight: normal;
+    font-size: 0.5em;
 }

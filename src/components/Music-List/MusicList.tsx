@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import {songItem} from '../../types';
+import './MusicList.css'
 import {MusicListItem} from '../MusicListItem/MusicListItem';
 
 export const MusicList=()=>{
@@ -20,8 +21,7 @@ export const MusicList=()=>{
     },[songsArray]);
 
     const getSongsList=async()=>{
-        console.log("not coming...");
-        try{
+        console.log("not coming...");        try{
             const response=await axios.get('https://api-stg.jam-community.com/song/trending');
             setSongs(response.data);
         }catch(error:any)
@@ -67,7 +67,7 @@ export const MusicList=()=>{
         likeSong();
     };
     
-    return <div className="music-container">
+    return <div className='music-container'>
             {songsList&&songsList.map((song:songItem)=>{
             return <MusicListItem 
                     key={song.songId} 

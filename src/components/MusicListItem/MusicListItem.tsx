@@ -22,7 +22,9 @@ export const MusicListItem=({songItem,onLikeClick}:IMusicListItemProps)=>{
               </div>
               <div className="player-like-div">
                  <MusicPlayer musicFilePath={musicFilePath} audioType={audioType}/>
-                 <button onClick={()=>onLikeClick(songId)}>Like</button>
+                 <button onClick={()=>onLikeClick(songId)}>
+                     Like
+                 </button>
               </div>
             </div>
             );    
