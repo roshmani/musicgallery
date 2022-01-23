@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import {songItem} from '../types';
+import {songItem} from '../../types';
 import {MusicListItem} from '../MusicListItem/MusicListItem';
 
 export const MusicList=()=>{
@@ -37,7 +37,8 @@ export const MusicList=()=>{
             songTitle:songItem.name,
             thumbnailImage:songItem.cover_image_path,
             musicFilePath:songItem.music_file_path,
-            noOfLikes:songItem.likes
+            noOfLikes:songItem.likes,
+            audioType:songItem.music_file_mimetype
         }
     };
     const onLikeClick=(songId:string)=>{
@@ -65,10 +66,14 @@ export const MusicList=()=>{
         }  ;  
         likeSong();
     };
-
+    
     return <div>
             {songsList&&songsList.map((song:songItem)=>{
-            return <MusicListItem key={song.songId} songItem={song} onLikeClick={onLikeClick}/>
+            return <MusicListItem 
+                    key={song.songId} 
+                    songItem={song} 
+                    onLikeClick={onLikeClick}                     
+                />
             })
             }
         </div>;    

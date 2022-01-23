@@ -4,4 +4,5 @@ export type songItem={
     thumbnailImage:string;
     musicFilePath:string;
     noOfLikes:number;
+    audioType:string;
 }
