@@ -7,7 +7,7 @@ interface IPauseProps{
 export default function Pause({handleClick}:IPauseProps) {
   
   return (
-        <button className="pause-button" onClick={() => handleClick()}>
+        <button aria-label="pause" className="pause-button" onClick={() => handleClick()}>
          <PauseCircleFilledIcon />
         </button>
  

@@ -23,7 +23,7 @@ export const MusicListItem=({songItem,onLikeClick}:IMusicListItemProps)=>{
               </div>
               <div className="player-like-div">
                  <MusicPlayer musicFilePath={musicFilePath} audioType={audioType}/>
-                 <button className="like-button" onClick={()=>onLikeClick(songId)}>
+                 <button aria-label="like-button" className="like-button" onClick={()=>onLikeClick(songId)}>
                      <FavoriteIcon/>
                  </button>
               </div>

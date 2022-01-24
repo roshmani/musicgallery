@@ -6,7 +6,7 @@ interface IPlayProps{
 }
 export default function Play({handleClick}:IPlayProps) {
   return (
-        <button className="play-button" onClick={() => handleClick()}>
+        <button aria-label="play" className="play-button" onClick={() => handleClick()}>
           <PlayCircleFilledIcon />
         </button> 
     
